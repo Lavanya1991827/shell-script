@@ -10,7 +10,7 @@ LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 echo "Script strarted executing at $TIMESTAMP" >> $LOGFILE
 
-if[$ID -ne 0]
+if[ $ID -ne 0 ]
 then
  echo "please run as root user"
   exit 1 # you can give other than 0
