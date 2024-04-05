@@ -8,11 +8,8 @@ message=""
 
 while IFS= read line
 do 
-  usage=$(echo $line | awk '{print -$6F}' | cut -d % -f1)  #here $line =]df -hT | grep -vE 'tmp|File' . 6F ->means 6th position it will dispaly
-  partition=$(echo $line | awk '{print $1F}')            #it shows partition name like /dev/xvdf . . 1F ->means 1st position it will dispaly
-  
-   usage=$(echo $line | awk '{print $6F}' | cut -d % -f1)
-    partition=$(echo $line | awk '{print $1F}')
+   usage=$(echo $line | awk '{print $6F}' | cut -d % -f1) #here $line =]df -hT | grep -vE 'tmp|File' . 6F ->means 6th position it will dispaly
+    partition=$(echo $line | awk '{print $1F}')  #it shows partition name like /dev/xvdf . . 1F ->means 1st position it will dispaly
   
   if [ $usage -ge $DISK_THRESHOLD ]
   then
