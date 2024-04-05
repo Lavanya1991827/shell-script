@@ -11,7 +11,7 @@ fi                       # fi means reverse of if, indicating condition end
 
 yum install mysql -y
 
-if[ $? -ne 0 ]
+if [ $? -ne 0 ]
 then
  echo "mysql installation failed"
  exit 1 
@@ -21,7 +21,7 @@ fi
 
 yum install git -y
 
-if[$? -ne 0]
+if [$? -ne 0]
 then
  echo "git installation failed"
  exit 1 
