@@ -19,8 +19,9 @@ echo -e "Message: $message"
 echo -e "Message: $message"
 
 #echo "$message" | mail -s "High Disk Usage" info@joindevops.com
+echo "$message" | mail -s "High Disk Usage" lavanyact002@gmail.com
 
-sh mail.sh "DevOps Team" "High Disk Usage" "$message" "info@joindevops.com" "ALERT High Disk Usage"
+#sh mail.sh "DevOps Team" "High Disk Usage" "$message" "info@joindevops.com" "ALERT High Disk Usage"
 
 
 #df -hT | grep -vE 'tmp|File' | awk '{print $6F}' | cut -d % -f1
