@@ -22,7 +22,7 @@ VALIDATE(){   #creating validate function
 
 }
 
-yum insatll mysql -y
+yum install mysql -y
 
 VALIDATE $? "MYSQL"   #calling validate function
 
