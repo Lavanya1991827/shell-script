@@ -1,7 +1,7 @@
 #!/bin/bash
-UID = $(id -u)
+ID= $(id -u)
 
-if [ $UID -ne 0 ]
+if [ $ID -ne 0 ]
 then
   echo "please try with root user"
   exit 1 # you can give other than 0
